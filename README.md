@@ -1,61 +1,160 @@
 # CS-REPOSITORY-
 Martinez, Eizel Faye C & Romero, Samantha B.
 
+Project Proposal
 
-FamiLynk: Keeping the families in sync 
+Project Title
 
-Problem Statement:
+FamiLynk: Keeping Families in sync
 
-Many Filipino households struggle with keeping track of daily tasks, schedules, and responsibilities. This often leads to missed bills, forgotten chores, wasted food, and disorganized routines. Families need a more efficient, centralized system to coordinate household management.
+Problem Statement
 
-Proposed Solution:
+Many Filipino households struggle to manage daily tasks, schedules, and responsibilities. This often results in missed bill payments, forgotten chores, wasted food, and disorganized routines. With family members juggling school, work, and personal activities, it becomes difficult to maintain coordination and accountability. There is a need for a centralized, user-friendly tool that can help families stay organized, connected, and efficient.
 
-We propose FamiLynk, a family-centered mobile application designed to improve household organization and strengthen family coordination. Within one year of implementation, FamiLynk aims to:
+Project Objectives
 
-Ensure at least 80% of scheduled tasks are completed on time through its calendar, grocery list, and bill reminder features.
+The project aims to:
 
-Reduce wasted food and missed maintenance by at least 80% through pantry tracking, expiration date monitoring, and chore/repair reminders.
-
-Enhance family safety and coordination through location tracking and shared responsibilities.
-
-
- Features:
-
-1. Shared Family Calendar – synchronize schedules and appointments.
+1. Provide a shared calendar to help families coordinate schedules and complete at least 80% of tasks on time.
 
 
-2. Synced Grocery List – collaborative shopping made easy.
+2. Reduce wasted food and missed maintenance by at least 80% through pantry tracking, expiration monitoring, and repair reminders.
 
 
-3. Bill Tracker with Reminders – avoid late payments.
+3. Support Filipino households with localized features such as Pinoy recipe suggestions and synced grocery lists.
 
 
-4. Pet Care Scheduling – reminders for feeding, grooming, and vet visits.
+4. Enhance safety and coordination with real-time family member location tracking.
 
 
-5. Pantry Tracking & Expiration Monitoring – reduce food waste.
-
-
-6. Pinoy-Based Recipe Suggestions – maximize available ingredients.
-
-
-7. Chore & Repair Reminders – prevent household neglect.
-
-
-8. Location Tracking – improve safety and coordination among family members.
+5. Create a single platform that combines features of existing apps while tailoring them to the needs of Filipino families.
 
 
 
-Uniqueness of FamiLynk
+Planned Features
 
-Unlike existing family management apps, FamiLynk integrates all these features in one platform, tailored specifically to Filipino households. While some apps may offer a few similar functions, none combine them as comprehensively as FamiLynk.
+Shared Family Calendar – synchronize events, deadlines, and appointments.
 
-Expected Outcomes
+Synced Grocery List – real-time updating for collaborative shopping.
 
-Improved household efficiency and organization.
+Bill Tracker with Reminders – avoid missed or late payments.
 
-Strengthened family cooperation and accountability.
+Pet Care Scheduling – reminders for feeding, grooming, and veterinary care.
 
-Reduced stress caused by disorganized routines.
+Pantry Tracking & Expiration Monitoring – prevent food waste.
 
-A more harmonious, connected, and secure family life.
+Pinoy-Based Recipe Suggestions – recommend meals based on available ingredients.
+
+Chore & Repair Reminders – assign and track household responsibilities.
+
+Location Tracking – ensure safety and improve family coordination.
+
+
+Planned Inputs and Outputs
+
+Inputs:
+
+User logins and family member profiles.
+
+Calendar entries (events, tasks, deadlines).
+
+Grocery list items, pantry stock, and expiration dates.
+
+Bill information (due dates, amounts, categories).
+
+Location data (optional for family members).
+
+
+Outputs:
+
+Notifications and reminders (bills, chores, tasks, expiration alerts).
+
+Organized calendar with completed/unfinished task reports.
+
+Suggested recipes based on pantry items.
+
+Summaries of household activities and responsibilities.
+
+
+
+Logic Plan
+
+The system flow will follow this sequence:
+
+1. User Login → Select Family Group
+
+
+2. Input Data (events, chores, bills, groceries, etc.)
+
+
+3. System Processes inputs → syncs across family devices.
+
+
+4. System Generates Outputs (reminders, recipe suggestions, task updates).
+
+
+5. Users Receive Notifications/Updates → complete tasks → progress tracked.
+
+
+
+PSEUDOCODE 
+START
+
+DISPLAY "Welcome to FamiLynk"
+USER logs in or creates account
+
+IF login successful THEN
+    LOAD family group data
+ELSE
+    PROMPT user to register or retry login
+END IF
+
+LOOP
+    DISPLAY Main Menu:
+        1. Manage Calendar
+        2. Manage Grocery List
+        3. Track Bills
+        4. Pantry & Expiration
+        5. Chores & Repairs
+        6. Pet Care
+        7. Location Tracking
+        8. Exit
+
+    GET user choice
+
+    CASE user choice OF
+        1: 
+            INPUT event/task details
+            SAVE to shared calendar
+            SEND notification to family members
+        2: 
+            INPUT grocery item
+            UPDATE synced grocery list
+            DISPLAY updated list
+        3:
+            INPUT bill details (due date, amount)
+            SAVE to bill tracker
+            SET reminder notification
+        4: 
+            INPUT pantry item + expiration date
+            STORE data
+            IF item nearing expiration THEN
+                NOTIFY user
+            END IF
+        5:
+            INPUT chore or repair task
+            ASSIGN to family member
+            SET reminder notification
+        6:
+            INPUT pet care schedule
+            SET reminders (feeding, grooming, vet visits)
+        7:
+            REQUEST location data from family member
+            DISPLAY location on map
+        8:
+            DISPLAY "Thank you for using FamiLynk"
+            EXIT program
+    END CASE
+END LOOP
+
+END
