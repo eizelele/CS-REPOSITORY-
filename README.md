@@ -1,2 +1,2 @@
 # CS-REPOSITORY-
-Martinez, Eizel Faye C
+Martinez, Eizel Faye C & Romero, Samantha B.
