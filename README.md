@@ -20,14 +20,7 @@ The project aims to:
 
 2. Reduce wasted food and missed maintenance by at least 80% through pantry tracking, expiration monitoring, and repair reminders.
 
-
-3. Support Filipino households with localized features such as Pinoy recipe suggestions and synced grocery lists.
-
-
-4. Enhance safety and coordination with real-time family member location tracking.
-
-
-5. Create a single platform that combines features of existing apps while tailoring them to the needs of Filipino families.
+3. Create a single platform that combines features of existing apps while tailoring them to the needs of Filipino families.
 
 
 
@@ -43,11 +36,7 @@ Pet Care Scheduling – reminders for feeding, grooming, and veterinary care.
 
 Pantry Tracking & Expiration Monitoring – prevent food waste.
 
-Pinoy-Based Recipe Suggestions – recommend meals based on available ingredients.
-
 Chore & Repair Reminders – assign and track household responsibilities.
-
-Location Tracking – ensure safety and improve family coordination.
 
 
 Planned Inputs and Outputs
@@ -62,16 +51,11 @@ Grocery list items, pantry stock, and expiration dates.
 
 Bill information (due dates, amounts, categories).
 
-Location data (optional for family members).
-
-
 Outputs:
 
 Notifications and reminders (bills, chores, tasks, expiration alerts).
 
 Organized calendar with completed/unfinished task reports.
-
-Suggested recipes based on pantry items.
 
 Summaries of household activities and responsibilities.
 
@@ -98,7 +82,6 @@ The system flow will follow this sequence:
 
 
 PSEUDOCODE 
-
 START
 
 DISPLAY "Welcome to FamiLynk"
@@ -118,8 +101,7 @@ LOOP
         4. Pantry & Expiration
         5. Chores & Repairs
         6. Pet Care
-        7. Location Tracking
-        8. Exit
+        7. Exit
 
     GET user choice
 
@@ -149,10 +131,8 @@ LOOP
         6:
             INPUT pet care schedule
             SET reminders (feeding, grooming, vet visits)
+        
         7:
-            REQUEST location data from family member
-            DISPLAY location on map
-        8:
             DISPLAY "Thank you for using FamiLynk"
             EXIT program
     END CASE
