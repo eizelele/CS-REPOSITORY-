@@ -98,6 +98,7 @@ The system flow will follow this sequence:
 
 
 PSEUDOCODE 
+
 START
 
 DISPLAY "Welcome to FamiLynk"
